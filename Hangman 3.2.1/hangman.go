@@ -91,7 +91,7 @@ func InputUser(hangman1 Hangman) {
 
 				}
 				if hangman1.isanusedletter > 1 { //si il a plus d'une occurence
-					fmt.Println("Vous avez déjà été utilisé cette lettre")
+					fmt.Println("Vous avez déjà utilisé cette lettre")
 					hangman1.usedletters = append(hangman1.usedletters[:i], hangman1.usedletters[i+1:]...) // on supprime la lettre du tableau des lettres utilisées
 					hangman1.isanusedletter = 0                                                            //remise à zéro
 					InputUser(hangman1)
